@@ -1,0 +1,4 @@
+com\baeldung\websocket\MessageDecoder.class
+com\baeldung\websocket\MessageEncoder.class
+com\baeldung\model\Message.class
+com\baeldung\websocket\ChatEndpoint.class
