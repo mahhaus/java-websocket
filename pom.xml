@@ -6,12 +6,6 @@
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
-    <parent>
-        <groupId>com.baeldung</groupId>
-        <artifactId>java-websocket</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
-
     <dependencies>
         <dependency>
             <groupId>javax.websocket</groupId>
@@ -49,9 +43,13 @@
         </testResources>
         <plugins>
             <plugin>
-                <groupId>com.heroku.sdk</groupId>
-                <artifactId>heroku-maven-plugin</artifactId>
-                <version>2.0.6</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
